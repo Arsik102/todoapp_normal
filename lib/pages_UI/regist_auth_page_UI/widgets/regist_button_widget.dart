@@ -2,8 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:todoapp_normal/constants/fonts.dart';
 
 class RegistButtonWidget extends StatelessWidget {
+  final String text1;
+  final String text2;
+  final void Function()? onTap;
   const RegistButtonWidget({
     super.key,
+    required this.text1,
+    required this.text2,
+    required this.onTap,
   });
 
   @override
@@ -11,10 +17,13 @@ class RegistButtonWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text('Уже есть аккаунт? ', style: mediumText),
-        Text(
-          'Войти',
-          style: TextStyle(fontSize: 18, color: Colors.blue),
+        Text(text1, style: mediumText),
+        GestureDetector(
+          onTap: onTap,
+          child: Text(
+            text2,
+            style: const TextStyle(fontSize: 18, color: Colors.blue),
+          ),
         ),
       ],
     );

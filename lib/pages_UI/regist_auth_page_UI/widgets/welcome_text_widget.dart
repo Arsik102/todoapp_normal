@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:todoapp_normal/constants/fonts.dart';
 
 class WelcomeTextWidget extends StatelessWidget {
-  final welcomeText;
+  final String welcomeText;
   const WelcomeTextWidget({
     super.key,
     required this.welcomeText,
@@ -15,7 +15,7 @@ class WelcomeTextWidget extends StatelessWidget {
         left: 40,
       ),
       child: Text(
-        '$welcomeText',
+        welcomeText,
         style: laregeText,
       ),
     );

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 const TextStyle laregeText =
-    TextStyle(fontSize: 38, fontFamily: 'Nunito', fontWeight: FontWeight.w600);
+    TextStyle(fontSize: 38, fontFamily: 'Nunito', fontWeight: FontWeight.w500);
 
 const TextStyle mediumText = TextStyle(fontSize: 18, fontFamily: 'Nunito');
 
